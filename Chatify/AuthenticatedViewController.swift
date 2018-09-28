@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class AuthenticatedViewController: UIViewController {
 
@@ -16,7 +17,17 @@ class AuthenticatedViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func onLogout(_ sender: Any) {
+        PFUser.logOutInBackground(block: { (error) in
+            if let error = error {
+                print(error.localizedDescription)
+            } else {
+                print("Successful loggout")
+                // Load and show the login view controller
+                print("User logout successfully")
+                self.performSegue(withIdentifier: "logoutSegue", sender: nil)            }
+        })    }
+    
     /*
     // MARK: - Navigation
 
