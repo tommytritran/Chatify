@@ -12,7 +12,7 @@ import Parse
 class ChatViewController: UIViewController, UITableViewDataSource {
     
     var messages: [PFObject] = []
-
+    
     @IBOutlet weak var chatMessageField: UITextField!
     @IBOutlet weak var tableView: UITableView!
     
@@ -21,6 +21,7 @@ class ChatViewController: UIViewController, UITableViewDataSource {
         tableView.dataSource = self
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 100
+        tableView.separatorStyle = .none
         Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.onTimer), userInfo: nil, repeats: true)
         // Do any additional setup after loading the view.
     }

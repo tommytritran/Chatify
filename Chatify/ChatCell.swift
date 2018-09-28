@@ -12,12 +12,15 @@ class ChatCell: UITableViewCell {
 
     
     
+    @IBOutlet weak var bubleView: UIView!
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var chatMessageLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        bubleView.layer.cornerRadius = 16
+        bubleView.clipsToBounds = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

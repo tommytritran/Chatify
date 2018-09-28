@@ -114,29 +114,42 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jOJ-gK-gTL">
-                                                    <rect key="frame" x="10" y="9.9999999999999982" width="78" height="20.333333333333329"/>
+                                                    <rect key="frame" x="10" y="4.9999999999999964" width="78" height="60.666666666666657"/>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" text="Your Message" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ujr-mb-aVX">
-                                                    <rect key="frame" x="10" y="40.333333333333336" width="394" height="20.333333333333336"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <view contentMode="scaleToFill" restorationIdentifier="bubleView" translatesAutoresizingMaskIntoConstraints="NO" id="awZ-7l-l7A">
+                                                    <rect key="frame" x="4" y="71.333333333333329" width="128" height="36.333333333333329"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" text="Your Message" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ujr-mb-aVX">
+                                                            <rect key="frame" x="10" y="7.9999999999999982" width="108" height="20.333333333333329"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.035268570630000003" green="0.61605408029999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="Ujr-mb-aVX" firstAttribute="leading" secondItem="awZ-7l-l7A" secondAttribute="leading" constant="10" id="0TK-LD-9EA"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Ujr-mb-aVX" secondAttribute="trailing" constant="10" id="GO6-3b-Esq"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Ujr-mb-aVX" secondAttribute="bottom" constant="8" id="UET-Qt-8aP"/>
+                                                        <constraint firstItem="Ujr-mb-aVX" firstAttribute="top" secondItem="awZ-7l-l7A" secondAttribute="top" constant="8" id="kuu-Cw-tWl"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="jOJ-gK-gTL" firstAttribute="top" secondItem="Fvd-pq-zjM" secondAttribute="top" constant="10" id="4hW-z5-ejR"/>
-                                                <constraint firstItem="Ujr-mb-aVX" firstAttribute="leading" secondItem="Fvd-pq-zjM" secondAttribute="leading" constant="10" id="KH2-jp-guM"/>
-                                                <constraint firstItem="jOJ-gK-gTL" firstAttribute="leading" secondItem="Fvd-pq-zjM" secondAttribute="leading" constant="10" id="Use-8F-fRM"/>
-                                                <constraint firstAttribute="trailing" secondItem="Ujr-mb-aVX" secondAttribute="trailing" constant="10" id="a5x-gQ-BAq"/>
-                                                <constraint firstItem="Ujr-mb-aVX" firstAttribute="top" secondItem="jOJ-gK-gTL" secondAttribute="bottom" constant="10" id="f9e-23-W36"/>
-                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Ujr-mb-aVX" secondAttribute="bottom" constant="10" id="wMh-UB-yty"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="awZ-7l-l7A" secondAttribute="trailing" constant="10" id="ExW-5Z-rUm"/>
+                                                <constraint firstItem="jOJ-gK-gTL" firstAttribute="top" secondItem="Fvd-pq-zjM" secondAttribute="top" constant="5" id="F47-TP-yzO"/>
+                                                <constraint firstItem="awZ-7l-l7A" firstAttribute="leading" secondItem="Fvd-pq-zjM" secondAttribute="leading" constant="4" id="OBS-hd-hIp"/>
+                                                <constraint firstItem="jOJ-gK-gTL" firstAttribute="leading" secondItem="Fvd-pq-zjM" secondAttribute="leading" constant="10" id="UFt-II-K1N"/>
+                                                <constraint firstAttribute="bottom" secondItem="awZ-7l-l7A" secondAttribute="bottom" id="jEp-E5-6wT"/>
+                                                <constraint firstItem="awZ-7l-l7A" firstAttribute="top" secondItem="jOJ-gK-gTL" secondAttribute="bottom" constant="5.6699999999999999" id="jo4-u5-vBY"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.0" green="0.35520563469999999" blue="0.085902364780000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
+                                            <outlet property="bubleView" destination="awZ-7l-l7A" id="KQ8-bf-KFK"/>
                                             <outlet property="chatMessageLabel" destination="Ujr-mb-aVX" id="vUS-Pq-UCA"/>
                                             <outlet property="usernameLabel" destination="jOJ-gK-gTL" id="iWT-SL-Wwd"/>
                                         </connections>
