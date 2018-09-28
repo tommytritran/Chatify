@@ -16,6 +16,7 @@ class ChatViewController: UIViewController, UITableViewDataSource {
     @IBOutlet weak var chatMessageField: UITextField!
     @IBOutlet weak var tableView: UITableView!
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
@@ -25,6 +26,8 @@ class ChatViewController: UIViewController, UITableViewDataSource {
         Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.onTimer), userInfo: nil, repeats: true)
         // Do any additional setup after loading the view.
     }
+    
+
     
     @IBAction func onSendMsg(_ sender: Any) {
         
