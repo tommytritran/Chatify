@@ -22,13 +22,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             configuration.server = "http://45.79.67.127:1337/parse"
         }))
         
-        if PFUser.current() != nil {
+       if PFUser.current() != nil {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             // view controller currently being set in Storyboard as default will be overridden
+        print("Welcome back \(PFUser.current()?.username ?? "") 😀")
+
             window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "ChatViewController")
         }
 
         return true
+    }
+    
+    func logOut(){
+
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

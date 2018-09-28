@@ -16,7 +16,7 @@ class LoginViewController: UIViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.navigationController?.isToolbarHidden = false
         // Do any additional setup after loading the view.
     }
     
@@ -56,7 +56,8 @@ class LoginViewController: UIViewController {
                 } else {
                     print("User logged in successfully")
                     // display view controller that needs to shown after successful login
-                    self.performSegue(withIdentifier: "loginSegue", sender: nil)
+                   self.performSegue(withIdentifier: "loginSegue", sender: nil) 
+
                 }
             }
         }
@@ -89,7 +90,10 @@ class LoginViewController: UIViewController {
                 } else {
                     print("User Registered successfully")
                     // manually segue to logged in view
-                    self.performSegue(withIdentifier: "loginSegue", sender: nil)
+                   self.performSegue(withIdentifier: "loginSegue", sender: nil)
+                    //self.presentView(ChatViewController, animated: true, completion: nil)
+
+
                 }
             }
         }
