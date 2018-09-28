@@ -34,12 +34,18 @@
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" red="0.0" green="0.35520563469999999" blue="0.085902364780000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onSignup:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Uc-K7-Y6d"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czu-OK-bQJ">
                                 <rect key="frame" x="88" y="359" width="47" height="30"/>
                                 <state key="normal" title="Sign In">
                                     <color key="titleColor" red="0.33539657890000002" green="1" blue="0.001246583132" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="joa-Qn-FHe"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pGj-NU-ija">
                                 <rect key="frame" x="88" y="253" width="239" height="30"/>
@@ -67,9 +73,28 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="passwordField" destination="QCM-IB-lQ1" id="gp2-gU-DxP"/>
+                        <outlet property="usernameField" destination="pGj-NU-ija" id="Zg6-aY-n4M"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Authenticated View Controller-->
+        <scene sceneID="EOR-Wh-8Ev">
+            <objects>
+                <viewController storyboardIdentifier="AuthenticatedViewController" id="dX4-cI-azO" customClass="AuthenticatedViewController" customModule="Chatify" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FXZ-qc-9yr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="9C7-WU-XLq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yvh-5g-5zy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="930" y="29"/>
         </scene>
     </scenes>
 </document>

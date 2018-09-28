@@ -14,6 +14,7 @@
 		0A82C523215DB455005E3001 /* ChatifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A82C522215DB455005E3001 /* ChatifyTests.swift */; };
 		0A82C52E215DB455005E3001 /* ChatifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A82C52D215DB455005E3001 /* ChatifyUITests.swift */; };
 		0A82C53C215DB698005E3001 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A82C53B215DB698005E3001 /* LoginViewController.swift */; };
+		0A82C542215DC150005E3001 /* AuthenticatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A82C541215DC150005E3001 /* AuthenticatedViewController.swift */; };
 		2AD6D6E1DAC5AF7D990D0D04 /* Pods_ChatifyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5703E8F5E2E00BF0BCB4013F /* Pods_ChatifyTests.framework */; };
 		812DC036E2D6AD10C277668A /* Pods_Chatify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EA0F6B709BA0A06EE3F5B91 /* Pods_Chatify.framework */; };
 		D3B606487008B6303F862A6B /* Pods_ChatifyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BC2CA6BFA61B07A9B87331 /* Pods_ChatifyUITests.framework */; };
@@ -50,6 +51,7 @@
 		0A82C52D215DB455005E3001 /* ChatifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatifyUITests.swift; sourceTree = "<group>"; };
 		0A82C52F215DB455005E3001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A82C53B215DB698005E3001 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0A82C541215DC150005E3001 /* AuthenticatedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatedViewController.swift; sourceTree = "<group>"; };
 		14B5D3B63308645D8A29708C /* Pods-Chatify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chatify.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chatify/Pods-Chatify.release.xcconfig"; sourceTree = "<group>"; };
 		485E740DD805EF65FC5AB314 /* Pods-ChatifyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatifyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChatifyTests/Pods-ChatifyTests.release.xcconfig"; sourceTree = "<group>"; };
 		5703E8F5E2E00BF0BCB4013F /* Pods_ChatifyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatifyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +122,7 @@
 				0A82C516215DB455005E3001 /* LaunchScreen.storyboard */,
 				0A82C519215DB455005E3001 /* Info.plist */,
 				0A82C53B215DB698005E3001 /* LoginViewController.swift */,
+				0A82C541215DC150005E3001 /* AuthenticatedViewController.swift */,
 			);
 			path = Chatify;
 			sourceTree = "<group>";
@@ -393,6 +396,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A82C542215DC150005E3001 /* AuthenticatedViewController.swift in Sources */,
 				0A82C53C215DB698005E3001 /* LoginViewController.swift in Sources */,
 				0A82C50E215DB453005E3001 /* AppDelegate.swift in Sources */,
 			);
