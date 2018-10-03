@@ -25,6 +25,7 @@ class ChatViewController: UIViewController, UITableViewDataSource {
         tableView.separatorStyle = .none
         Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.onTimer), userInfo: nil, repeats: true)
         // Do any additional setup after loading the view.
+
     }
     
 

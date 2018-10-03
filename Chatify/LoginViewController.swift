@@ -53,7 +53,7 @@ class LoginViewController: UIViewController {
             PFUser.logInWithUsername(inBackground: username, password: password) { (user: PFUser?, error: Error?) in
                 if let error = error {
                     print("User log in failed: \(error.localizedDescription)")
-                    self.alertMsg(msg: "Could not access server", errorTitle: "Connection")
+                    self.alertMsg(msg: error.localizedDescription, errorTitle: "User log in failed")
                 } else {
                     print("User logged in successfully")
                     // display view controller that needs to shown after successful login
